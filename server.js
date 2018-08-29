@@ -7,7 +7,7 @@ require('./hbs/helpers');
 
 // Para obtener el puerto que nos asignara Heroku.
 // Si no exite le pone el 3000
-const port = process.env.POST || 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + '/public'));
 
